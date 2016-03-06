@@ -8,7 +8,7 @@ Matt Turk ([mturk@berkeley.edu](mailto:your_email@berkeley.edu))
 
 ## Demo Video
 
-See [Represent Prog2B Video] (https://link_to_your_video)
+See [mainRepresent PROG 2B Android Mobile/Wear App] (https://youtu.be/qiry1aOB66A)
 
 ## Screenshots
 

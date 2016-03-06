@@ -53,6 +53,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SecondPollView"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <service android:name=".WatchToPhoneService" />
         <!-- Listeners are special services that need to be declared like below, as BIND_LISTENER -->
         <service android:name=".WatchListenerService"

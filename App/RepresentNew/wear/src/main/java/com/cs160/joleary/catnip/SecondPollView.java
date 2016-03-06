@@ -1,34 +1,28 @@
-package com.example.matthewturk.wearrepresent;
+package com.cs160.joleary.catnip;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.wearable.activity.WearableActivity;
 import android.support.wearable.view.BoxInsetLayout;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-
 /**
- * Created by matthewturk on 3/3/16.
+ * Created by matthewturk on 3/5/16.
  */
-public class PollView extends WearableActivity {
+public class SecondPollView extends WearableActivity {
     private static final SimpleDateFormat AMBIENT_DATE_FORMAT =
             new SimpleDateFormat("HH:mm", Locale.US);
 
     private BoxInsetLayout mContainerView;
     private TextView mTextView;
     private TextView mClockView;
-    ImageView imageV;
+    TextView t;
     private TextView int1;
     private TextView int2;
     private int num;
@@ -38,7 +32,7 @@ public class PollView extends WearableActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.poll_layout);
+        setContentView(R.layout.second_poll_layout);
         setAmbientEnabled();
         int1 = (TextView) findViewById(R.id.textView5);
         int1.setText((String) Integer.toString((int) Math.ceil(Math.random() * 100)));
@@ -47,19 +41,47 @@ public class PollView extends WearableActivity {
 
         int2 = (TextView) findViewById(R.id.textView6);
         int2.setText((String) Integer.toString(num));
+        addListenerOnImage();
+    }
 
 //        Intent sendIntent = new Intent(getBaseContext(), WatchToPhoneService.class);
 //        sendIntent.putExtra("CAT_NAME", "Bob Monk");
 //        startService(sendIntent);
 //        addListenerOnImage();
 
+    public void getOtherView(SecondPollView v) {
+        Intent intent = new Intent(getApplicationContext(), SecondView.class);
+        startActivity(intent);
+    }
+    public void addListenerOnImage() {
+        t = (TextView) findViewById(R.id.textView4);
+        t.setOnTouchListener(new OnSwipeTouchListener(SecondPollView.this) {
+            @Override
+            public void onSwipeTop() {
+                Toast.makeText(SecondPollView.this, "top", Toast.LENGTH_SHORT).show();
+            }
 
+            public void onSwipeRight() {
+                Toast.makeText(SecondPollView.this, "right", Toast.LENGTH_SHORT).show();
+                getOtherView(SecondPollView.this);
+            }
 
+            public void onSwipeLeft() {
+                Toast.makeText(SecondPollView.this, "left", Toast.LENGTH_SHORT).show();
+
+            }
+
+            public void onSwipeBottom() {
+                Toast.makeText(SecondPollView.this, "bottom", Toast.LENGTH_SHORT).show();
+            }
+
+        });
+    }
 
 //        mContainerView = (BoxInsetLayout) findViewById(R.id.container);
 //        mTextView = (TextView) findViewById(R.id.text);
 //        mClockView = (TextView) findViewById(R.id.clock);
-    }
+
 //    public void getOtherView(MainActivity v) {
 //        Intent intent = new Intent(getApplicationContext(), FirstSecondView.class);
 //        startActivity(intent);

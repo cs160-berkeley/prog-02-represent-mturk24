@@ -153,7 +153,7 @@ public class SecondView extends WearableActivity {
             if (mAccel > 12) {
                 int rand = (int) Math.ceil(Math.random() * 100);
                 String toPass = "\n" + Integer.toString(rand);
-                Intent sendZip = new Intent(SecondView.this, PollView.class);
+                Intent sendZip = new Intent(SecondView.this, SecondPollView.class);
                 sendZip.putExtra("rep", toPass);
                 startActivity(sendZip);
             }
