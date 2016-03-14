@@ -14,6 +14,7 @@
         android:layout_height="40dp"
         android:gravity="center|top"
         android:text="Representatives"
+        android:textColor="#ffffffff"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="30dp"
         android:layout_centerHorizontal="true" />
@@ -22,20 +23,21 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Bob Monk"
+        android:text="Marco Rubio"
         android:id="@+id/textView4"
         android:gravity="center|top"
         android:background="#ffffff"
         android:textColor="#fa0303"
         android:layout_gravity="right"
         android:layout_alignTop="@+id/imageView2"
-        android:layout_alignStart="@+id/textView7" />
+        android:layout_alignStart="@+id/textView7"
+        android:layout_alignEnd="@+id/textView1" />
 
     <TextView
         android:layout_width="200dp"
         android:layout_height="55dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Bobmonk@gmail.com                         bmonk.com                                             &quot;Obama is bad&quot;"
+        android:text="     Sen.Rubio@opencongress.org                         http://www.rubio.senate.gov                                            Leadership is not about making people even angrier and more frustrated. http://rub.io/NUu9F1 &quot;"
         android:id="@+id/textView2"
         android:gravity="center|top"
 
@@ -44,51 +46,39 @@
         android:layout_gravity="right"
         android:layout_below="@+id/textView4"
         android:layout_alignStart="@+id/textView4"
-        android:textSize="15dp" />
+        android:textSize="9.5dp"
+        android:layout_alignEnd="@+id/textView1" />
 
     <ImageView
         android:layout_width="104dp"
         android:layout_height="125dp"
         android:id="@+id/imageView2"
-        android:src="@drawable/bobjindal"
+        android:src="@drawable/rubio"
         android:layout_below="@+id/textView1"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="200dp"
-        android:layout_height="55dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="mchalmers@gmail.com          mchalmers.com                        &quot;I love being rich&quot;"
-        android:id="@+id/textView5"
-        android:gravity="center|top"
-        android:textColor="#080808"
-        android:background="#ffffff"
-        android:layout_gravity="right"
-        android:layout_above="@+id/button5"
-        android:layout_alignParentEnd="true"
-        android:textSize="15dp" />
+        android:layout_alignStart="@+id/textView1"
+        android:layout_toStartOf="@+id/textView4" />
 
     <ImageView
         android:layout_width="104dp"
         android:layout_height="125dp"
         android:id="@+id/imageView3"
-        android:src="@drawable/bieber"
-        android:layout_alignTop="@+id/textView8"
-        android:layout_alignParentStart="true" />
+        android:src="@drawable/clawson"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView4" />
 
     <ImageView
         android:layout_width="104dp"
         android:layout_height="140dp"
         android:id="@+id/imageView4"
-        android:src="@drawable/rickrosscompressor"
+        android:src="@drawable/senatebillnelson"
         android:layout_alignTop="@+id/textView7"
-        android:layout_alignParentStart="true" />
+        android:layout_toStartOf="@+id/textView6" />
 
     <TextView
         android:layout_width="240dp"
         android:layout_height="65dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Jorgmason@gmail.com                                          Jorgmason.com                    &quot;Shoutout to America&quot;"
+        android:text="Sen.Billnelson@opencongress.org                                                    http://www.billnelson.senate.gov                                            Today marks nine years since Bob Levinson went missing in Iran; it’s time for Iran to finally fulfill its promises to help us bring Bob home"
         android:id="@+id/textView6"
         android:gravity="center|top"
         android:textColor="#080808"
@@ -96,20 +86,22 @@
         android:layout_gravity="right"
         android:layout_below="@+id/textView7"
         android:layout_alignStart="@+id/textView7"
-        android:textSize="15dp" />
+        android:textSize="9.5dp"
+        android:layout_alignEnd="@+id/textView7" />
 
     <TextView
         android:layout_width="200dp"
         android:layout_height="30dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Jorg Mason"
+        android:text="Bill Nelson"
         android:id="@+id/textView7"
         android:gravity="center|top"
         android:background="#ffffff"
         android:textColor="#0313fa"
         android:layout_gravity="right"
         android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/textView8" />
+        android:layout_alignStart="@+id/textView8"
+        android:layout_alignEnd="@+id/textView1" />
 
     <Button
         android:layout_width="100dp"
@@ -120,8 +112,8 @@
         android:onClick="getNewView"
         android:textColor="#ffffff"
         android:layout_below="@+id/textView2"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_toEndOf="@+id/imageView2" />
 
     <Button
         android:layout_width="100dp"
@@ -143,22 +135,22 @@
         android:background="#fd0202"
         android:textColor="#ffffff"
         android:onClick="getNewView"
+        android:layout_alignEnd="@+id/button4"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView5"
-        android:layout_alignEnd="@+id/textView5" />
+        android:layout_toEndOf="@+id/imageView3" />
 
     <TextView
         android:layout_width="200dp"
         android:layout_height="25dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Mario Chalmers"
+        android:text="Curt Clawson"
         android:id="@+id/textView8"
         android:gravity="center|top"
         android:background="#ffffff"
         android:textColor="#fa0303"
         android:layout_gravity="right"
-        android:layout_above="@+id/textView5"
-        android:layout_alignStart="@+id/textView5" />
+        android:layout_below="@+id/imageView4"
+        android:layout_alignEnd="@+id/textView1" />
 
     <TextView
         android:id="@+id/textView3"
@@ -166,10 +158,26 @@
         android:layout_height="40dp"
         android:gravity="center|top"
         android:text="Senators"
+        android:textColor="#ffffffff"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="30dp"
         android:layout_above="@+id/imageView4"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Rep.Clawson@opencongress.org                                                 http://clawson.house.gov                                Thank you for the kind words and support on this issue!  Pump up the volume! "
+        android:id="@+id/textView9"
+        android:gravity="center|top"
+        android:textColor="#080808"
+        android:background="#ffffff"
+        android:layout_gravity="right"
+        android:textSize="10.5dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignEnd="@+id/button5"
+        android:layout_toEndOf="@+id/imageView3" />
 
 </RelativeLayout>

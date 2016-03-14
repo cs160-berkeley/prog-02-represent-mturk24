@@ -41,9 +41,9 @@ public class MainActivity extends WearableActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setAmbientEnabled();
-//        Intent sendIntent = new Intent(getBaseContext(), WatchToPhoneService.class);
-//        sendIntent.putExtra("CAT_NAME", "Bob Monk");
-//        startService(sendIntent);
+        Intent sendIntent = new Intent(getBaseContext(), WatchToPhoneService.class);
+        sendIntent.putExtra("CAT_NAME", "Bob Monk");
+        startService(sendIntent);
         // ShakeDetector initialization
 //        mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 //        mAccelerometer = mSensorManager

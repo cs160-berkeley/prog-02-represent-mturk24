@@ -34,13 +34,13 @@ public class SecondPollView extends WearableActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_poll_layout);
         setAmbientEnabled();
-        int1 = (TextView) findViewById(R.id.textView5);
-        int1.setText((String) Integer.toString((int) Math.ceil(Math.random() * 100)));
-        temp = int1.getText().toString();
-        num = 100 - Integer.parseInt(temp);
-
-        int2 = (TextView) findViewById(R.id.textView6);
-        int2.setText((String) Integer.toString(num));
+//        int1 = (TextView) findViewById(R.id.textView5);
+//        int1.setText((String) Integer.toString((int) Math.ceil(Math.random() * 100)));
+//        temp = int1.getText().toString();
+//        num = 100 - Integer.parseInt(temp);
+//
+//        int2 = (TextView) findViewById(R.id.textView6);
+//        int2.setText((String) Integer.toString(num));
         addListenerOnImage();
     }
 
