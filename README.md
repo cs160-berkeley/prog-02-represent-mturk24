@@ -8,14 +8,20 @@ Matt Turk ([mturk@berkeley.edu](mailto:your_email@berkeley.edu))
 
 ## Demo Video
 
-See [Prog 2C API calls and Congressmen] (https://youtu.be/qiry1aOB66A)
+See [Prog 2C API calls and Congressmen] (https://youtu.be/lWYZSq9Ch0c)
 
 ## Screenshots
 
-<img src="screenshots/Screenshot 2016-03-04 23.20.47.png" height="400" alt="Screenshot"/>
-<img src="screenshots/Screenshot 2016-03-04 23.20.35.png" height="400" alt="Screenshot"/>
-<img src="screenshots/Screenshot 2016-03-04 23.20.24.png" height="400" alt="Screenshot"/>
-<img src="screenshots/Screenshot 2016-03-04 23.21.07.png" height="400" alt="Screenshot"/>
+<img src="Screenshot 2016-03-14 14.41.41.png" height="400" alt="Screenshot"/>
+<img src="Screenshot 2016-03-14 14.43.11.png" height="400" alt="Screenshot"/>
+<img src="Screenshot 2016-03-14 14.44.07.png" height="400" alt="Screenshot"/>
+<img src="Screenshot 2016-03-14 14.43.43.png" height="400" alt="Screenshot"/>
+<img src = "Screenshot 2016-03-14 14.41.21.png" height="400" alt=Screenshot"/>
+<img src = "Screenshot 2016-03-14 14.40.58.png" height="400" alt=Screenshot"/>
+<img src = "Screenshot 2016-03-14 14.40.42.png" height="400" alt=Screenshot"/>
+<img src = "Screenshot 2016-03-14 14.40.27.png" height="400" alt=Screenshot"/>
+
+
 
 ## Acknowledgments
 
